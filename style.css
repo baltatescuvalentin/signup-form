@@ -84,7 +84,7 @@ label {
 }
 
 .undermessage {
-    
+    margin-top: 2px;
 }
 
 
@@ -116,16 +116,50 @@ label {
 }
 
 
+.submit:disabled {
+    background-color: grey;
+    transform: none;
+}
+
+.invalid_input {
+    box-shadow: 0 12px 6px -6px red;
+}
+
+.invalid_text {
+    color: red;
+}
+
+.valid_input {
+    box-shadow: 0 12px 6px -6px lightgreen;
+}
+
+.valid_text {
+    color: green;
+}
+
 
 @media screen and (max-width: 600px){
     .container {
         margin: 0;
-        margin-top: 8px;
         width: 100%;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 1% 99%;
+    }
+
+    .form {
+        padding: 2px;
     }
 
     .input {
         width: 95%;
+    }
+
+    .log_in_text {
+        font-size: 16px;
+    }
+
+    .submit {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
     }
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -23,41 +23,41 @@
                 <form action="" class="grid_form">
                     <div class="input_text">
                         <label for="firstname">FIRST NAME</label>
-                        <input class="input" type="text" name="firstname" id="firstname" placeholder="John">
+                        <input class="input" type="text" name="firstname" id="firstname" placeholder="John" required oninvalid="setCustomValidity(' ')">
                         <p class="undermessage no_margins_tb" id="firstname">&nbsp;</p>
                     </div>
 
                     <div class="input_text">
                         <label for="lastname">LAST NAME</label>
-                        <input class="input" type="text" name="lastname" id="lastname" placeholder="Johnson">
+                        <input class="input" type="text" name="lastname" id="lastname" placeholder="Johnson" required oninvalid="setCustomValidity(' ')">
                         <p class="undermessage no_margins_tb" id="lastname">&nbsp;</p>
                     </div>
 
                     <div class="input_text">
                         <label for="lastname">EMAIL</label>
-                        <input class="input" type="email" name="email" id="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                        <input class="input" type="email" name="email" id="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required oninvalid="setCustomValidity(' ')">
                         <p class="undermessage no_margins_tb" id="email">&nbsp;</p>
                     </div>
 
                     <div class="input_text">
                         <label for="lastname">PHONE NUMBER</label>
-                        <input class="input" type="tel" name="phonenumber" id="phonenumber" placeholder="0712345678" pattern="[0-9]{10}" minlength="8">
+                        <input class="input" type="tel" name="phonenumber" id="phonenumber" placeholder="0712345678" pattern="[0-9]{10}" minlength="10" maxlength="10" required oninvalid="setCustomValidity(' ')">
                         <p class="undermessage no_margins_tb" id="phonenumber">&nbsp;</p>
                     </div>
 
                     <div class="input_text">
                         <label for="lastname">PASSWORD</label>
-                        <input class="input" type="text" name="password" id="password" placeholder="" required minlength="8">
+                        <input class="input" type="password" name="password" id="password" placeholder="Min 8 characters" required oninvalid="setCustomValidity(' ')" minlength="8" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[a-zA-Z0-9]{8,}">
                         <p class="undermessage no_margins_tb" id="password">&nbsp;</p>
                     </div>
 
                     <div class="input_text">
                         <label for="lastname">CONFIRM</label>
-                        <input class="input" type="text" name="confirm" id="confirm" placeholder="" required minlength="8">
+                        <input class="input" type="password" name="confirm" id="confirm" placeholder="Min 8 characters" required oninvalid="setCustomValidity(' ')" minlength="8" (?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[a-zA-Z0-9]{8,}>
                         <p class="undermessage no_margins_tb" id="confirm">&nbsp;</p>
                     </div>
 
-                    <button type="button" class="submit">Sign Up</button>
+                    <button type="submit" class="submit" disabled="true">Sign Up</button>
                 <!-- </div> -->
                 </form>
             
