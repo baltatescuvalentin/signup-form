@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="color_column"></div>
+            <div class="form">
+                <p class="form_title no_margins_tb">Sign up</p>
+
+                <p class="form_subtitle no_margins_tb">Basic Details</p>
+
+                <div class="separator"></div>
+
+                
+                <!-- <div class="grid_form"> -->
+                <form action="" class="grid_form">
+                    <div class="input_text">
+                        <label for="firstname">FIRST NAME</label>
+                        <input class="input" type="text" name="firstname" id="firstname" placeholder="John">
+                        <p class="undermessage no_margins_tb" id="firstname">&nbsp;</p>
+                    </div>
+
+                    <div class="input_text">
+                        <label for="lastname">LAST NAME</label>
+                        <input class="input" type="text" name="lastname" id="lastname" placeholder="Johnson">
+                        <p class="undermessage no_margins_tb" id="lastname">&nbsp;</p>
+                    </div>
+
+                    <div class="input_text">
+                        <label for="lastname">EMAIL</label>
+                        <input class="input" type="email" name="email" id="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                        <p class="undermessage no_margins_tb" id="email">&nbsp;</p>
+                    </div>
+
+                    <div class="input_text">
+                        <label for="lastname">PHONE NUMBER</label>
+                        <input class="input" type="tel" name="phonenumber" id="phonenumber" placeholder="0712345678" pattern="[0-9]{10}" minlength="8">
+                        <p class="undermessage no_margins_tb" id="phonenumber">&nbsp;</p>
+                    </div>
+
+                    <div class="input_text">
+                        <label for="lastname">PASSWORD</label>
+                        <input class="input" type="text" name="password" id="password" placeholder="" required minlength="8">
+                        <p class="undermessage no_margins_tb" id="password">&nbsp;</p>
+                    </div>
+
+                    <div class="input_text">
+                        <label for="lastname">CONFIRM</label>
+                        <input class="input" type="text" name="confirm" id="confirm" placeholder="" required minlength="8">
+                        <p class="undermessage no_margins_tb" id="confirm">&nbsp;</p>
+                    </div>
+
+                    <button type="button" class="submit">Sign Up</button>
+                <!-- </div> -->
+                </form>
+            
+                
+
+                <p class="log_in_text">Already have an account? <a href="" class="log_in">Log in!</a> </p>
+            </div>
+        </div>
+    </body>
+</html>
